@@ -1,0 +1,43 @@
+.swiper-slide {
+    opacity: 0;
+    transition: scale 1000ms;
+    scale: 0.7;
+    width: max-content;
+}
+
+.swiper-slide.swiper-slide-active {
+    opacity: 1;
+    scale: 1;
+    transition: scale 1000ms;
+}
+
+.swiper-slide.swiper-slide-prev {
+    opacity: 0.5;
+    transition: scale 1000ms;
+    -webkit-mask-image: -webkit-gradient(linear, right center, left center,
+            from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+}
+
+.swiper-slide.swiper-slide-next {
+    opacity: 0.5;
+    transition: scale 1000ms;
+    -webkit-mask-image: -webkit-gradient(linear, left center, right center,
+            from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+}
+
+.swiper-wrapper {
+    /padding-top: 15px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #5B29EA;
+    /* Couleur des flèches */
+    width: 60px;
+    height: 60px;
+}
+
+.swiper-pagination-bullet.swiper-custom-bullet-active {
+    background-color: #5B29EA;
+    opacity: 1;
+}

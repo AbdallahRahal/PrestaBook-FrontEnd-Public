@@ -1,0 +1,12 @@
+.fc-non-business {
+    background-color: #032c4b !important;
+    opacity: 0.7 !important;
+}
+
+.fc-day-today {
+    background-color: transparent !important;
+}
+
+.fc-timegrid-slot {
+    height: 30px !important
+}
